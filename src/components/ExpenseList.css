@@ -1,0 +1,78 @@
+/* ExpenseList.css */
+
+.expense-list li {
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.expense-list li span {
+  padding: 5px;
+}
+
+.expense-list .delete {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.expense-list .edit {
+  background-color: #0766AD;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.expense-list button:hover {
+  background-color: #c82333;
+}
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.pagination button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 768px) {
+  .expense-list li {
+    padding: 8px;
+    margin-bottom: 3px;
+  }
+
+  .expense-list .delete,
+  .expense-list .edit {
+    padding: 4px 8px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+
+  .pagination button {
+    padding: 4px 8px;
+    margin-right: 3px;
+  }
+}
