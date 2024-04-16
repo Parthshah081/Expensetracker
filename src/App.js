@@ -3,7 +3,6 @@ import './App.css';
 import AddExpenseForm from './components/AddExpenseForm';
 import AddIncomeForm from './components/AddIncomeForm';
 import ExpenseList from './components/ExpenseList';
-import ExpenseSummary from './components/ExpenseSummary';
 import ExpenseTrends from './components/ExpenseTrends';
 import EditExpenseForm from './components/EditExpenseForm';
 import Modal from './components/Modal';
