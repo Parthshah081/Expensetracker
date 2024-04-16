@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+/* App.css */
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main {
+  background-color: #222831;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  padding: 20px;
+}
+
+.App {
+  background-color: #7D7C7C;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Expense-Tracker {
+  margin-bottom: 10px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.balance,
+.income {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-right: 10px;
+  height: 200px;
+  width: 300px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.balance {
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.income {
+  background-color: #e6f7ff;
+}
+
+.balance button,
+.income button {
+  font-size: 16px;
+  padding: 8px 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.my-expenses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.my-expense-list,
+.my-expense-category {
+  background-color: #7d7c7c;
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.my-expense-list {
+  width: 100%;
+  max-width: 700px;
+}
+
+.my-expense-category {
+  width: 100%;
+  max-width: 700px;
+}
+
+.balance button:hover,
+.income button:hover {
+  background-color: #0056b3;
+}
+
+.ExpenseSummary,
+.ExpenseList {
+  width: 100%;
+  max-width: 800px;
+}
+
+.ExpenseTrends {
+  width: 100%;
 }
